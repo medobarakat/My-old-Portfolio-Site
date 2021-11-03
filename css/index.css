@@ -533,6 +533,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .about-us {
+    margin-top: 0rem !important;
+  }
   .about-us h1 {
     margin-bottom: 3rem;
   }

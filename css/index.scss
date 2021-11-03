@@ -507,6 +507,7 @@ body {
 // thin phone
 @media (max-width: 576px) {
   .about-us {
+    margin-top: 0rem !important;
     h1 {
       margin-bottom: 3rem;
     }
