@@ -4,8 +4,6 @@ $primary-color: #4458dc;
 $primary-color2: #854fee;
 $title-color: #141313;
 $text-color: #777777;
-$border-color: #201f1f17;
-$gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
 $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
 $box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 $section-margin: 6rem;
@@ -13,10 +11,11 @@ $item-font: "Itim", cursive;
 body {
   font-family: $item-font;
   scroll-behavior: smooth;
-  transition: 0.5s ease-out;
+  transition: all 0.5s ease;
 }
 //  start of Nav
 .navbar {
+  overflow: hidden;
   position: sticky;
   width: 100%;
   padding: 1rem 0;
@@ -50,6 +49,7 @@ body {
 // End of Nav
 // Start of Home
 .home {
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   background: url(../img/img2.png) no-repeat;
   height: 80vh;
@@ -104,6 +104,7 @@ body {
 // end Of Home
 // start of about us
 .about-us {
+  overflow: hidden;
   font-family: $item-font;
   margin-top: $section-margin;
   height: 100vh;
@@ -137,6 +138,7 @@ body {
 // end of about us
 // start of add1
 .add1 {
+  overflow: hidden;
   margin-top: 14rem;
   transition: 0.3s ease;
   .card {
@@ -209,6 +211,7 @@ body {
 // end of add1
 // start of services
 .services {
+  overflow: hidden;
   margin-top: $section-margin;
   margin-bottom: $section-margin;
   .services-head {
@@ -252,6 +255,7 @@ body {
 // end of services
 //start of portfolio
 .portfolio {
+  overflow: hidden;
   .first-txt {
     h2 {
       margin-bottom: 2rem;
@@ -288,8 +292,6 @@ body {
     }
   }
   .port-text {
-    // display: flex;
-    // flex-wrap: wrap;
     h3 {
       margin: 0;
     }
@@ -328,8 +330,9 @@ body {
 // end of portfolio
 // start of footer
 .footer {
+  overflow: hidden;
   margin-top: $section-margin;
-  height: 20rem;
+  height: 25rem;
   background-color: $primary-color2;
   .row {
     margin-top: 6rem;
@@ -397,8 +400,11 @@ body {
       background-color: rgb(182, 179, 179);
     }
   }
+  .home {
+    height: 200vh;
+  }
   .about-us {
-    margin-top: 40rem !important;
+    margin-top: 10rem !important;
     text-align: center !important;
     img {
       display: none;
@@ -434,13 +440,13 @@ body {
       margin-left: 7rem;
     }
     .footer-txt2 {
-      margin-left: 14rem;
+      margin-left: 12rem;
     }
     .footer-icons {
-      margin-left: 14rem;
+      margin-left: 12rem;
       i {
-        padding: 0rem 0.5rem;
-        font-size: 1rem !important;
+        padding: 1rem 0.5rem;
+        font-size: 2rem !important;
       }
     }
   }
@@ -476,13 +482,21 @@ body {
       }
     }
     .last-txt {
-      margin-left: 1rem;
+      margin-left: 0.75rem;
+      p {
+        font-size: 1.25rem;
+      }
     }
     .footer-txt2 {
       margin-left: 1rem;
+      margin-bottom: -3rem;
+      h4 {
+        font-size: 2rem;
+      }
     }
     .footer-icons {
       margin-left: 1rem;
+      margin-bottom: 4rem;
     }
   }
 }
@@ -490,7 +504,15 @@ body {
 // thin phone
 @media (max-width: 576px) {
   .about-us {
-    margin-top: 30rem !important;
+    h1 {
+      margin-bottom: 3rem;
+    }
+    .text-about {
+      line-height: 40px;
+    }
+  }
+  .port-text-inside {
+    margin-left: 7rem;
   }
   .add1-info {
     &::before {
@@ -505,6 +527,12 @@ body {
   }
   .footer {
     width: 100% !important;
+    .footer-txt2 {
+      margin-left: 0rem;
+    }
+    .footer-icons {
+      margin-left: 0rem;
+    }
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////

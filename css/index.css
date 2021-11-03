@@ -1,10 +1,11 @@
 body {
   font-family: "Itim", cursive;
   scroll-behavior: smooth;
-  transition: 0.5s ease-out;
+  transition: all 0.5s ease;
 }
 
 .navbar {
+  overflow: hidden;
   position: sticky;
   width: 100%;
   padding: 1rem 0;
@@ -43,6 +44,7 @@ body {
 }
 
 .home {
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
   background: url(../img/img2.png) no-repeat;
   height: 80vh;
@@ -103,6 +105,7 @@ body {
 }
 
 .about-us {
+  overflow: hidden;
   font-family: "Itim", cursive;
   margin-top: 6rem;
   height: 100vh;
@@ -140,6 +143,7 @@ body {
 }
 
 .add1 {
+  overflow: hidden;
   margin-top: 14rem;
   transition: 0.3s ease;
 }
@@ -223,6 +227,7 @@ body {
 }
 
 .services {
+  overflow: hidden;
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
@@ -274,6 +279,10 @@ body {
 .services .col-lg-3 .card-body p,
 .services .card .card-body p {
   color: #777777;
+}
+
+.portfolio {
+  overflow: hidden;
 }
 
 .portfolio .first-txt h2 {
@@ -356,8 +365,9 @@ body {
 }
 
 .footer {
+  overflow: hidden;
   margin-top: 6rem;
-  height: 20rem;
+  height: 25rem;
   background-color: #854fee;
 }
 
@@ -427,8 +437,11 @@ body {
   .navbar .nav-link:hover {
     background-color: #b6b3b3;
   }
+  .home {
+    height: 200vh;
+  }
   .about-us {
-    margin-top: 40rem !important;
+    margin-top: 10rem !important;
     text-align: center !important;
   }
   .about-us img {
@@ -463,14 +476,14 @@ body {
     margin-left: 7rem;
   }
   .footer .footer-txt2 {
-    margin-left: 14rem;
+    margin-left: 12rem;
   }
   .footer .footer-icons {
-    margin-left: 14rem;
+    margin-left: 12rem;
   }
   .footer .footer-icons i {
-    padding: 0rem 0.5rem;
-    font-size: 1rem !important;
+    padding: 1rem 0.5rem;
+    font-size: 2rem !important;
   }
 }
 
@@ -498,19 +511,33 @@ body {
     font-size: 1.5rem;
   }
   .footer .last-txt {
-    margin-left: 1rem;
+    margin-left: 0.75rem;
+  }
+  .footer .last-txt p {
+    font-size: 1.25rem;
   }
   .footer .footer-txt2 {
     margin-left: 1rem;
+    margin-bottom: -3rem;
+  }
+  .footer .footer-txt2 h4 {
+    font-size: 2rem;
   }
   .footer .footer-icons {
     margin-left: 1rem;
+    margin-bottom: 4rem;
   }
 }
 
 @media (max-width: 576px) {
-  .about-us {
-    margin-top: 30rem !important;
+  .about-us h1 {
+    margin-bottom: 3rem;
+  }
+  .about-us .text-about {
+    line-height: 40px;
+  }
+  .port-text-inside {
+    margin-left: 7rem;
   }
   .add1-info::before {
     content: "";
@@ -523,5 +550,11 @@ body {
   }
   .footer {
     width: 100% !important;
+  }
+  .footer .footer-txt2 {
+    margin-left: 0rem;
+  }
+  .footer .footer-icons {
+    margin-left: 0rem;
   }
 }
