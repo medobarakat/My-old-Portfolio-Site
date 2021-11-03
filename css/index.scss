@@ -507,7 +507,7 @@ body {
 // thin phone
 @media (max-width: 576px) {
   .about-us {
-    margin-top: 0rem !important;
+    margin-top: -10rem !important;
     h1 {
       margin-bottom: 3rem;
     }
@@ -516,7 +516,7 @@ body {
     }
   }
   .port-text-inside {
-    margin-left: 7rem;
+    margin-left: 3rem;
   }
   .add1-info {
     &::before {
