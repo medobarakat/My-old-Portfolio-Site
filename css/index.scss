@@ -1,0 +1,512 @@
+// This Code wasCreated By AhmedBarakat
+// Start Of Variables
+$primary-color: #4458dc;
+$primary-color2: #854fee;
+$title-color: #141313;
+$text-color: #777777;
+$border-color: #201f1f17;
+$gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+$shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+$box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+$section-margin: 6rem;
+$item-font: "Itim", cursive;
+body {
+  font-family: $item-font;
+  scroll-behavior: smooth;
+  transition: 0.5s ease-out;
+}
+//  start of Nav
+.navbar {
+  position: sticky;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: white !important;
+  transition: all 0.5s ease-out;
+  z-index: 5;
+  .navbar-toggler {
+    color: $primary-color !important;
+  }
+  .navbar-brand {
+    color: $primary-color !important;
+    font-size: 2.3rem;
+    font-family: "Cookie", cursive;
+    transition: 0.5s ease-out;
+    &:hover {
+      color: $primary-color2 !important;
+    }
+  }
+  .nav-link {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    &:hover {
+      color: $primary-color !important;
+    }
+    &.active {
+      color: $primary-color !important;
+    }
+  }
+}
+// End of Nav
+// Start of Home
+.home {
+  font-family: "Roboto", sans-serif;
+  background: url(../img/img2.png) no-repeat;
+  height: 80vh;
+  padding-bottom: 45rem !important;
+  .home-text {
+    h3 {
+      font-size: 3rem;
+      font-weight: 400;
+      &::after {
+        content: "";
+        height: 2px;
+        display: inline-block;
+        width: 18rem;
+        background: black;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    h1 {
+      margin: 1rem 0rem;
+      font-weight: 500;
+      font-size: 5rem;
+    }
+    h4 {
+      margin: 2rem 0rem;
+      font-size: 2rem;
+      span {
+        color: $primary-color2;
+      }
+    }
+    padding-top: 33%;
+  }
+  img {
+    margin-top: 33%;
+  }
+  .home-button {
+    .btn {
+      margin-top: 3rem;
+      padding: 0.8rem 2.2rem;
+      color: whitesmoke;
+      background-color: $primary-color2 !important;
+      background-clip: padding-box;
+      transition: background 0.6 ease;
+      border: 1px solid $primary-color2 !important;
+    }
+    .btn:hover {
+      background-color: whitesmoke !important;
+      color: $title-color;
+    }
+  }
+}
+// end Of Home
+// start of about us
+.about-us {
+  font-family: $item-font;
+  margin-top: $section-margin;
+  height: 100vh;
+  h1 {
+    letter-spacing: 21px;
+    line-height: 4rem;
+    font-weight: bold;
+  }
+  .text-about {
+    color: $text-color;
+    line-height: 2rem;
+    font-weight: 500;
+    p {
+      margin-top: 3rem;
+    }
+  }
+  .btn {
+    margin-top: 3rem;
+    padding: 0.8rem 2.2rem;
+    color: whitesmoke;
+    background-color: $primary-color2 !important;
+    background-clip: padding-box;
+    transition: background 0.6 ease;
+    border: 1px solid $primary-color2 !important;
+  }
+  .btn:hover {
+    background-color: whitesmoke !important;
+    color: $title-color;
+  }
+}
+// end of about us
+// start of add1
+.add1 {
+  margin-top: 14rem;
+  transition: 0.3s ease;
+  .card {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: 0.9rem 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    &:hover {
+      box-shadow: var(--box-shadow);
+      transform: scale(1.1);
+      background-color: whitesmoke;
+    }
+    img {
+      max-width: 6rem;
+    }
+  }
+  .add1-info {
+    background-image: url(../img/img4.png);
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20rem;
+      height: 30rem;
+      background-color: #e029290a;
+      top: 0px;
+      right: 35px;
+    }
+    .add1-info-txt1 {
+      display: flex;
+      margin-left: 2rem;
+      span {
+        color: $primary-color2;
+        font-size: 5rem;
+        font-weight: bold;
+      }
+      h4 {
+        margin-left: 3rem;
+        width: 60px;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+    .add1-info-txt2 {
+      display: flex;
+      margin-top: 2rem;
+      .txt2-icon {
+        padding: 1rem 2rem;
+      }
+      span {
+        color: $primary-color;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 1rem;
+        color: $text-color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+// end of add1
+// start of services
+.services {
+  margin-top: $section-margin;
+  margin-bottom: $section-margin;
+  .services-head {
+    margin-bottom: 5rem;
+    padding: 1rem 0rem;
+    h2 {
+      margin-bottom: 2.5rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    p {
+      color: #777;
+    }
+  }
+  .col-lg-3,
+  .card {
+    background-color: rgba(248, 252, 253, 0.973);
+    transition: box-shadow 0.7s ease;
+    .card {
+      border: none !important;
+      &:hover {
+        box-shadow: $box-shadow;
+      }
+    }
+    .card-body {
+      img {
+        display: block;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
+      h4 {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
+// end of services
+//start of portfolio
+.portfolio {
+  .first-txt {
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .active {
+      color: $primary-color;
+    }
+    li {
+      padding: 2rem 2rem;
+      text-decoration: none;
+      color: $title-color;
+      font-size: 1.2rem;
+      transition: 0.5s ease;
+      cursor: pointer;
+      transition: box-shadow 0.7s ease;
+      &:hover {
+        color: $primary-color;
+        box-shadow: $box-shadow;
+      }
+      &::marker {
+        content: "";
+      }
+    }
+  }
+  .port-text {
+    // display: flex;
+    // flex-wrap: wrap;
+    h3 {
+      margin: 0;
+    }
+    .port-text-inside {
+      display: flex;
+      margin-top: 1rem;
+      p {
+        color: #777;
+        margin-top: 1rem;
+      }
+      i {
+        color: $primary-color2;
+        transition: color 0.5s ease;
+        margin-left: 3rem;
+        font-size: 2.5rem;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .col-lg-4 {
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.5s ease;
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: scale(1.1);
+    }
+  }
+  .my-portfolio {
+    .row {
+      padding: 0.5rem 0rem;
+    }
+  }
+}
+// end of portfolio
+// start of footer
+.footer {
+  margin-top: $section-margin;
+  height: 20rem;
+  background-color: $primary-color2;
+  .row {
+    margin-top: 6rem;
+  }
+  .footer-txt1 {
+    margin-top: 6rem;
+    p {
+      margin-top: 2rem;
+    }
+  }
+  .links {
+    h4 {
+      font-size: 1.25rem !important;
+    }
+  }
+  .last-txt {
+    color: $title-color;
+  }
+  .footer-txt2 {
+    margin-left: 2rem;
+  }
+  .footer-icons {
+    i {
+      padding: 0rem 1rem;
+      color: whitesmoke !important;
+      transition: color 0.5s ease;
+      &:hover {
+        color: black !important;
+      }
+    }
+  }
+  // go to up buttom
+  .up-buttom {
+    position: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 5;
+    color: red;
+    background-color: $primary-color2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    border: 1px solid $primary-color2;
+    &:hover {
+      color: $title-color !important;
+      background-color: whitesmoke;
+    }
+  }
+}
+.active1 {
+  position: fixed;
+  transition: all 0.5s ease;
+}
+// end of footer
+/////////////////////////////////////////////////////////////////////////////////////
+// tablet screen
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+    margin: auto;
+  }
+  .navbar {
+    .nav-link:hover {
+      background-color: rgb(182, 179, 179);
+    }
+  }
+  .about-us {
+    margin-top: 40rem !important;
+    text-align: center !important;
+    img {
+      display: none;
+    }
+    .text-about {
+      width: 100% !important;
+    }
+  }
+  .add1-info {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20rem;
+      height: 30rem;
+      background-color: #e029290a;
+      top: 0px;
+      right: 23rem !important;
+      .add1-info-txt1 {
+        background-color: red;
+      }
+    }
+  }
+  .services {
+    margin-top: 13rem;
+  }
+  .footer {
+    height: 60%;
+    width: 100%;
+    .links {
+      margin-left: 7rem;
+    }
+    .last-txt {
+      margin-left: 7rem;
+    }
+    .footer-txt2 {
+      margin-left: 14rem;
+    }
+    .footer-icons {
+      margin-left: 14rem;
+      i {
+        padding: 0rem 0.5rem;
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+// wide phone
+@media (max-width: 767px) {
+  .add1-info {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20rem;
+      height: 30rem;
+      background-color: e029290a !important;
+      top: 0px;
+      right: 11rem !important;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 60% !important;
+    .footer-txt1 {
+      margin-top: 5rem;
+    }
+    .links {
+      margin-left: 0rem;
+      ul {
+        li {
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .last-txt {
+      margin-left: 1rem;
+    }
+    .footer-txt2 {
+      margin-left: 1rem;
+    }
+    .footer-icons {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// thin phone
+@media (max-width: 576px) {
+  .about-us {
+    margin-top: 30rem !important;
+  }
+  .add1-info {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20rem;
+      height: 30rem;
+      background-color: #e029290a;
+      top: 0px;
+      right: 10rem !important;
+    }
+  }
+  .footer {
+    width: 100% !important;
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// This Code Is made by AhmedBarakat////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////

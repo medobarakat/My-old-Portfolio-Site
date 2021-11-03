@@ -1,0 +1,527 @@
+body {
+  font-family: "Itim", cursive;
+  scroll-behavior: smooth;
+  transition: 0.5s ease-out;
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: white !important;
+  transition: all 0.5s ease-out;
+  z-index: 5;
+}
+
+.navbar .navbar-toggler {
+  color: #4458dc !important;
+}
+
+.navbar .navbar-brand {
+  color: #4458dc !important;
+  font-size: 2.3rem;
+  font-family: "Cookie", cursive;
+  transition: 0.5s ease-out;
+}
+
+.navbar .navbar-brand:hover {
+  color: #854fee !important;
+}
+
+.navbar .nav-link {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.navbar .nav-link:hover {
+  color: #4458dc !important;
+}
+
+.navbar .nav-link.active {
+  color: #4458dc !important;
+}
+
+.home {
+  font-family: "Roboto", sans-serif;
+  background: url(../img/img2.png) no-repeat;
+  height: 80vh;
+  padding-bottom: 45rem !important;
+}
+
+.home .home-text {
+  padding-top: 33%;
+}
+
+.home .home-text h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.home .home-text h3::after {
+  content: "";
+  height: 2px;
+  display: inline-block;
+  width: 18rem;
+  background: black;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.home .home-text h1 {
+  margin: 1rem 0rem;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.home .home-text h4 {
+  margin: 2rem 0rem;
+  font-size: 2rem;
+}
+
+.home .home-text h4 span {
+  color: #854fee;
+}
+
+.home img {
+  margin-top: 33%;
+}
+
+.home .home-button .btn {
+  margin-top: 3rem;
+  padding: 0.8rem 2.2rem;
+  color: whitesmoke;
+  background-color: #854fee !important;
+  background-clip: padding-box;
+  transition: background 0.6 ease;
+  border: 1px solid #854fee !important;
+}
+
+.home .home-button .btn:hover {
+  background-color: whitesmoke !important;
+  color: #141313;
+}
+
+.about-us {
+  font-family: "Itim", cursive;
+  margin-top: 6rem;
+  height: 100vh;
+}
+
+.about-us h1 {
+  letter-spacing: 21px;
+  line-height: 4rem;
+  font-weight: bold;
+}
+
+.about-us .text-about {
+  color: #777777;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.about-us .text-about p {
+  margin-top: 3rem;
+}
+
+.about-us .btn {
+  margin-top: 3rem;
+  padding: 0.8rem 2.2rem;
+  color: whitesmoke;
+  background-color: #854fee !important;
+  background-clip: padding-box;
+  transition: background 0.6 ease;
+  border: 1px solid #854fee !important;
+}
+
+.about-us .btn:hover {
+  background-color: whitesmoke !important;
+  color: #141313;
+}
+
+.add1 {
+  margin-top: 14rem;
+  transition: 0.3s ease;
+}
+
+.add1 .card {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.8rem 0rem;
+  margin: 0.9rem 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.add1 .card:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+  background-color: whitesmoke;
+}
+
+.add1 .card img {
+  max-width: 6rem;
+}
+
+.add1 .add1-info {
+  background-image: url(../img/img4.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.add1 .add1-info::before {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 30rem;
+  background-color: #e029290a;
+  top: 0px;
+  right: 35px;
+}
+
+.add1 .add1-info .add1-info-txt1 {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.add1 .add1-info .add1-info-txt1 span {
+  color: #854fee;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.add1 .add1-info .add1-info-txt1 h4 {
+  margin-left: 3rem;
+  width: 60px;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.add1 .add1-info .add1-info-txt2 {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.add1 .add1-info .add1-info-txt2 .txt2-icon {
+  padding: 1rem 2rem;
+}
+
+.add1 .add1-info .add1-info-txt2 span {
+  color: #4458dc;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add1 .add1-info .add1-info-txt2 p {
+  margin-top: 1rem;
+  color: #777777;
+  font-size: 1.5rem;
+}
+
+.services {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.services .services-head {
+  margin-bottom: 5rem;
+  padding: 1rem 0rem;
+}
+
+.services .services-head h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.services .services-head p {
+  color: #777;
+}
+
+.services .col-lg-3,
+.services .card {
+  background-color: rgba(248, 252, 253, 0.973);
+  transition: box-shadow 0.7s ease;
+}
+
+.services .col-lg-3 .card,
+.services .card .card {
+  border: none !important;
+}
+
+.services .col-lg-3 .card:hover,
+.services .card .card:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.services .col-lg-3 .card-body img,
+.services .card .card-body img {
+  display: block;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.services .col-lg-3 .card-body h4,
+.services .card .card-body h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.services .col-lg-3 .card-body p,
+.services .card .card-body p {
+  color: #777777;
+}
+
+.portfolio .first-txt h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.portfolio .first-txt h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio ul .active {
+  color: #4458dc;
+}
+
+.portfolio ul li {
+  padding: 2rem 2rem;
+  text-decoration: none;
+  color: #141313;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+}
+
+.portfolio ul li:hover {
+  color: #4458dc;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.portfolio ul li::marker {
+  content: "";
+}
+
+.portfolio .port-text h3 {
+  margin: 0;
+}
+
+.portfolio .port-text .port-text-inside {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.portfolio .port-text .port-text-inside p {
+  color: #777;
+  margin-top: 1rem;
+}
+
+.portfolio .port-text .port-text-inside i {
+  color: #854fee;
+  transition: color 0.5s ease;
+  margin-left: 3rem;
+  font-size: 2.5rem;
+}
+
+.portfolio .port-text .port-text-inside i:hover {
+  color: black;
+}
+
+.portfolio .col-lg-4 {
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.5s ease;
+}
+
+.portfolio .col-lg-4:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+
+.portfolio .my-portfolio .row {
+  padding: 0.5rem 0rem;
+}
+
+.footer {
+  margin-top: 6rem;
+  height: 20rem;
+  background-color: #854fee;
+}
+
+.footer .row {
+  margin-top: 6rem;
+}
+
+.footer .footer-txt1 {
+  margin-top: 6rem;
+}
+
+.footer .footer-txt1 p {
+  margin-top: 2rem;
+}
+
+.footer .links h4 {
+  font-size: 1.25rem !important;
+}
+
+.footer .last-txt {
+  color: #141313;
+}
+
+.footer .footer-txt2 {
+  margin-left: 2rem;
+}
+
+.footer .footer-icons i {
+  padding: 0rem 1rem;
+  color: whitesmoke !important;
+  transition: color 0.5s ease;
+}
+
+.footer .footer-icons i:hover {
+  color: black !important;
+}
+
+.footer .up-buttom {
+  position: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 5;
+  color: red;
+  background-color: #854fee;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+  border: 1px solid #854fee;
+}
+
+.footer .up-buttom:hover {
+  color: #141313 !important;
+  background-color: whitesmoke;
+}
+
+.active1 {
+  position: fixed;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+    margin: auto;
+  }
+  .navbar .nav-link:hover {
+    background-color: #b6b3b3;
+  }
+  .about-us {
+    margin-top: 40rem !important;
+    text-align: center !important;
+  }
+  .about-us img {
+    display: none;
+  }
+  .about-us .text-about {
+    width: 100% !important;
+  }
+  .add1-info::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    background-color: #e029290a;
+    top: 0px;
+    right: 23rem !important;
+  }
+  .add1-info::before .add1-info-txt1 {
+    background-color: red;
+  }
+  .services {
+    margin-top: 13rem;
+  }
+  .footer {
+    height: 60%;
+    width: 100%;
+  }
+  .footer .links {
+    margin-left: 7rem;
+  }
+  .footer .last-txt {
+    margin-left: 7rem;
+  }
+  .footer .footer-txt2 {
+    margin-left: 14rem;
+  }
+  .footer .footer-icons {
+    margin-left: 14rem;
+  }
+  .footer .footer-icons i {
+    padding: 0rem 0.5rem;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .add1-info::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    background-color: e029290a !important;
+    top: 0px;
+    right: 11rem !important;
+  }
+  .footer {
+    width: 100%;
+    height: 60% !important;
+  }
+  .footer .footer-txt1 {
+    margin-top: 5rem;
+  }
+  .footer .links {
+    margin-left: 0rem;
+  }
+  .footer .links ul li a {
+    font-size: 1.5rem;
+  }
+  .footer .last-txt {
+    margin-left: 1rem;
+  }
+  .footer .footer-txt2 {
+    margin-left: 1rem;
+  }
+  .footer .footer-icons {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us {
+    margin-top: 30rem !important;
+  }
+  .add1-info::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    background-color: #e029290a;
+    top: 0px;
+    right: 10rem !important;
+  }
+  .footer {
+    width: 100% !important;
+  }
+}
