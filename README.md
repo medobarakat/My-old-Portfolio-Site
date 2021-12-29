@@ -1,13 +1,39 @@
 # My-PortFolio-Website
+this is a Responsive Webpage For My Portfolio
 
-## were made With :
+![screenshot](./img/ScreeShot.png)
 
-## Html , Css , Java Script , JQuery
+## Live Link
 
-## It has been made by Ahmed Barakat
+- Live: [DEMO](https://medobarakat.github.io/My-Portfolio-Site)
 
-## for more contact me on
+## Built with
 
-## ahmedbarakat2401@gmail.com
+- Pure JavaScript
+- JQuery
+- DOM properties and attributes
+- HTML & Css
 
-## or +201013782744
+## Getting Started
+To get a local copy of the repository please run the following commands on your terminal:
+- ```$ cd <folder>```
+- ```$ git clone https://github.com/medobarakat/My-Portfolio-Site.git ```
+- ```$ cd My-Portfolio-Site ```
+
+
+## Authors
+
+👤 **Ahmed Barakat**
+- Github: [@medobarakat](https://github.com/medobarakat)
+
+- Linkedin: [Ahmed Barakat](https://www.linkedin.com/in/ahmed-barakat-dev/)
+
+- Email: [My Gmail](ahmedbarakat2401@gmail.com)
+
+##    Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
