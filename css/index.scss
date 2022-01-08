@@ -291,6 +291,16 @@ body {
       }
     }
   }
+
+  .my-portfolio {
+    img {
+      height: 15rem;
+      width: 20rem;
+      display: block;
+      margin: auto;
+      padding-top: 10px;
+    }
+  }
   .port-text {
     h3 {
       margin: 0;
@@ -305,8 +315,9 @@ body {
       i {
         color: $primary-color2;
         transition: color 0.5s ease;
-        margin-left: 3rem;
-        font-size: 2.5rem;
+        margin-left: 2rem;
+        margin-top: 10px;
+        font-size: 2rem;
         &:hover {
           color: black;
         }
