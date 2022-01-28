@@ -1,5 +1,5 @@
-# My-PortFolio-Website
-this is a Responsive Webpage For My Portfolio
+# My-old-PortFolio-Website
+this is a Responsive Webpage For My old Portfolio
 
 ![screenshot](./img/ScreeShot.png)
 
@@ -17,8 +17,8 @@ this is a Responsive Webpage For My Portfolio
 ## Getting Started
 To get a local copy of the repository please run the following commands on your terminal:
 - ```$ cd <folder>```
-- ```$ git clone https://github.com/medobarakat/My-Portfolio-Site.git ```
-- ```$ cd My-Portfolio-Site ```
+- ```$ git clone https://github.com/medobarakat/My-old-Portfolio-Site ```
+- ```$ cd My-old-PortFolio-Website ```
 
 
 ## Authors
